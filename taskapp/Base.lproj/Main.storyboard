@@ -59,10 +59,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="tRZ-dh-YpD">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="dUw-IL-p1n"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="dUw-IL-p1n">
+                            <connections>
+                                <segue destination="YG5-bl-mU2" kind="show" id="cek-7g-1oc"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="Au0-i6-82f" id="ryq-kz-dfW"/>
+                        <segue destination="YG5-bl-mU2" kind="show" identifier="cellSegue" id="sY9-hL-7Vd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -103,4 +108,7 @@
             <point key="canvasLocation" x="1048" y="836"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="sY9-hL-7Vd"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -25,7 +25,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // MARK: UITableViewDateSourceプロトコルのメソッド
     // データの数（＝セルの数）を返すメソッド（テーブル内に何行並べるか）
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0  //0個のデータがあるという意味
+        return 10  //0個のデータがあるという意味
     }
     
     //各セルの内容を返すメソッド（どんな内容を表示するかを返すメソッド）
@@ -39,7 +39,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // MARK: UITableViewDalegateプロトコルのメソッド
     // 格セルを選択した時に実行されるメソッド
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
-        
+        performSegue(withIdentifier: "cellSegue",sender: nil)
     }
     
     //セルが削除可能なことを伝えるメソッド
