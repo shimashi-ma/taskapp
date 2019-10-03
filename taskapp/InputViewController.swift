@@ -9,7 +9,11 @@
 import UIKit
 
 class InputViewController: UIViewController {
-
+    
+    @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var contentsTextView: UITextView!
+    @IBOutlet weak var detaPicker: UIDatePicker!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
