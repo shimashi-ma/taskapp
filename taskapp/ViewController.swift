@@ -8,6 +8,7 @@
 
 import UIKit
 
+//承継クラスの後に,区切りでプロトコルを指定。
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
@@ -15,17 +16,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        //tableViewの実装をViewControllerに委譲。（デリゲートの指定。）
         tableView.delegate = self
         tableView.dataSource = self
     }
     
     // MARK: UITableViewDateSourceプロトコルのメソッド
-    // データの数（＝セルの数）を返すメソッド
+    // データの数（＝セルの数）を返すメソッド（テーブル内に何行並べるか）
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 0  //0個のデータがあるという意味
     }
     
-    //各セルの内容を返すメソッド
+    //各セルの内容を返すメソッド（どんな内容を表示するかを返すメソッド）
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // 再利用可能なcellを得る
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
@@ -41,7 +44,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     //セルが削除可能なことを伝えるメソッド
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath)-> UITableViewCell.EditingStyle{
-        return.delete
+        return.delete //削除可能にするためdeleteを返している
     }
     
     //Deleteボタンが押された時に呼ばれるメソッド
