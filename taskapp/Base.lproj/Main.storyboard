@@ -160,7 +160,7 @@
                     </view>
                     <connections>
                         <outlet property="contentsTextView" destination="ef9-ZS-Q1E" id="1At-Bm-x3j"/>
-                        <outlet property="detaPicker" destination="nWd-2s-uFX" id="R9m-Gj-h1b"/>
+                        <outlet property="datePicker" destination="nWd-2s-uFX" id="Djy-kr-UbT"/>
                         <outlet property="titleTextField" destination="iGZ-jv-KZp" id="hr4-pe-HKU"/>
                     </connections>
                 </viewController>

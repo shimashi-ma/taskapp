@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		99761DCD234570E600AC6AAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99761DCB234570E600AC6AAD /* Main.storyboard */; };
 		99761DCF234570E700AC6AAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99761DCE234570E700AC6AAD /* Assets.xcassets */; };
 		99761DD2234570E700AC6AAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99761DD0234570E700AC6AAD /* LaunchScreen.storyboard */; };
+		9983F4CA2346414500122ECE /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9983F4C92346414500122ECE /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		99761DCE234570E700AC6AAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99761DD1234570E700AC6AAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99761DD3234570E700AC6AAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9983F4C92346414500122ECE /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		99761DC6234570E600AC6AAD /* taskapp */ = {
 			isa = PBXGroup;
 			children = (
+				9983F4C92346414500122ECE /* Task.swift */,
 				99761DC7234570E600AC6AAD /* AppDelegate.swift */,
 				99761DC9234570E600AC6AAD /* ViewController.swift */,
 				99761DCB234570E600AC6AAD /* Main.storyboard */,
@@ -88,7 +91,6 @@
 				190D4648763F2CB707B19962 /* Pods-taskapp.debug.xcconfig */,
 				3C265171AC70A626BF3A1237 /* Pods-taskapp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9983F4CA2346414500122ECE /* Task.swift in Sources */,
 				996A887D2345E48800B1DF38 /* InputViewController.swift in Sources */,
 				99761DCA234570E600AC6AAD /* ViewController.swift in Sources */,
 				99761DC8234570E600AC6AAD /* AppDelegate.swift in Sources */,
