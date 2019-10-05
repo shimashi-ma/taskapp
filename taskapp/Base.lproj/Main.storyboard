@@ -112,14 +112,26 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nmu-XZ-ubr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="カテゴリ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WDM-OM-4I1">
                                 <rect key="frame" x="10" y="168.5" width="394" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dcY-X1-LAa">
+                                <rect key="frame" x="10" y="199.5" width="394" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="内容" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nmu-XZ-ubr">
+                                <rect key="frame" x="10" y="239.5" width="394" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ef9-ZS-Q1E">
-                                <rect key="frame" x="10" y="199.5" width="394" height="120"/>
+                                <rect key="frame" x="10" y="270.5" width="394" height="120"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="seL-aW-5Fh"/>
@@ -128,8 +140,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="いつまでに" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bBF-Zm-6en">
+                                <rect key="frame" x="10" y="400.5" width="394" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="nWd-2s-uFX">
-                                <rect key="frame" x="0.0" y="329.5" width="414" height="120"/>
+                                <rect key="frame" x="0.0" y="431" width="414" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="aVo-5m-iAS"/>
                                 </constraints>
@@ -141,20 +159,29 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="0rb-Mz-0mQ" firstAttribute="top" secondItem="XJA-Gd-9PE" secondAttribute="top" constant="10" id="2FF-3W-vlL"/>
-                            <constraint firstItem="nWd-2s-uFX" firstAttribute="top" secondItem="ef9-ZS-Q1E" secondAttribute="bottom" constant="10" id="47Z-RZ-b3K"/>
+                            <constraint firstItem="dcY-X1-LAa" firstAttribute="leading" secondItem="XJA-Gd-9PE" secondAttribute="leading" constant="10" id="6MN-Ro-Vbu"/>
+                            <constraint firstItem="XJA-Gd-9PE" firstAttribute="trailing" secondItem="WDM-OM-4I1" secondAttribute="trailing" constant="10" id="85c-An-zH8"/>
+                            <constraint firstItem="XJA-Gd-9PE" firstAttribute="trailing" secondItem="dcY-X1-LAa" secondAttribute="trailing" constant="10" id="A3z-ia-7aI"/>
+                            <constraint firstItem="XJA-Gd-9PE" firstAttribute="trailing" secondItem="bBF-Zm-6en" secondAttribute="trailing" constant="10" id="BBk-KR-cyj"/>
+                            <constraint firstItem="dcY-X1-LAa" firstAttribute="top" secondItem="WDM-OM-4I1" secondAttribute="bottom" constant="10" id="ELm-hr-QPo"/>
                             <constraint firstItem="0rb-Mz-0mQ" firstAttribute="leading" secondItem="XJA-Gd-9PE" secondAttribute="leading" constant="10" id="EMR-f0-IMv"/>
                             <constraint firstItem="XJA-Gd-9PE" firstAttribute="trailing" secondItem="Nmu-XZ-ubr" secondAttribute="trailing" constant="10" id="Eu0-c9-mNK"/>
                             <constraint firstItem="iGZ-jv-KZp" firstAttribute="leading" secondItem="XJA-Gd-9PE" secondAttribute="leading" constant="10" id="FST-K5-0cw"/>
+                            <constraint firstItem="nWd-2s-uFX" firstAttribute="top" secondItem="bBF-Zm-6en" secondAttribute="bottom" constant="10" id="FsN-AQ-ItD"/>
+                            <constraint firstItem="WDM-OM-4I1" firstAttribute="leading" secondItem="XJA-Gd-9PE" secondAttribute="leading" constant="10" id="IVO-Xc-H9I"/>
                             <constraint firstItem="nWd-2s-uFX" firstAttribute="leading" secondItem="XJA-Gd-9PE" secondAttribute="leading" id="KOI-Ht-exC"/>
-                            <constraint firstItem="Nmu-XZ-ubr" firstAttribute="top" secondItem="iGZ-jv-KZp" secondAttribute="bottom" constant="10" id="Kas-2d-ujX"/>
                             <constraint firstItem="ef9-ZS-Q1E" firstAttribute="top" secondItem="Nmu-XZ-ubr" secondAttribute="bottom" constant="10" id="Lzc-3W-1jG"/>
                             <constraint firstItem="XJA-Gd-9PE" firstAttribute="trailing" secondItem="0rb-Mz-0mQ" secondAttribute="trailing" constant="10" id="NQq-PM-5ZA"/>
+                            <constraint firstItem="bBF-Zm-6en" firstAttribute="leading" secondItem="XJA-Gd-9PE" secondAttribute="leading" constant="10" id="WZT-OY-ECz"/>
                             <constraint firstItem="Nmu-XZ-ubr" firstAttribute="leading" secondItem="XJA-Gd-9PE" secondAttribute="leading" constant="10" id="XEZ-IO-S4e"/>
                             <constraint firstItem="ef9-ZS-Q1E" firstAttribute="leading" secondItem="XJA-Gd-9PE" secondAttribute="leading" constant="10" id="XNv-Wr-r4n"/>
                             <constraint firstItem="iGZ-jv-KZp" firstAttribute="top" secondItem="0rb-Mz-0mQ" secondAttribute="bottom" constant="10" id="dq2-ey-YZA"/>
+                            <constraint firstItem="WDM-OM-4I1" firstAttribute="top" secondItem="iGZ-jv-KZp" secondAttribute="bottom" constant="10" id="gyr-sX-RZL"/>
                             <constraint firstItem="XJA-Gd-9PE" firstAttribute="trailing" secondItem="iGZ-jv-KZp" secondAttribute="trailing" constant="10" id="qKE-nd-goU"/>
                             <constraint firstItem="nWd-2s-uFX" firstAttribute="trailing" secondItem="XJA-Gd-9PE" secondAttribute="trailing" id="qoK-Od-n6j"/>
                             <constraint firstItem="XJA-Gd-9PE" firstAttribute="trailing" secondItem="ef9-ZS-Q1E" secondAttribute="trailing" constant="10" id="v18-2p-Iqo"/>
+                            <constraint firstItem="bBF-Zm-6en" firstAttribute="top" secondItem="ef9-ZS-Q1E" secondAttribute="bottom" constant="10" id="xPp-ia-uIV"/>
+                            <constraint firstItem="Nmu-XZ-ubr" firstAttribute="top" secondItem="dcY-X1-LAa" secondAttribute="bottom" constant="10" id="yTL-l3-vi7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XJA-Gd-9PE"/>
                     </view>
