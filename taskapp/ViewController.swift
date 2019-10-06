@@ -15,6 +15,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var searchBar: UISearchBar! //★カテゴリ検索用で追加
+    
+    
     //realmインスタンスを取得する
     let realm = try! Realm()
     

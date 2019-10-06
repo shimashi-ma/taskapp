@@ -21,7 +21,7 @@ class Task: Object {
     // 日時
     @objc dynamic var date = Date()
     
-    // カテゴリ
+    // ★カテゴリ
     @objc dynamic var category = ""
     
     

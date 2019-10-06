@@ -18,8 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="QuR-aN-qox">
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Au0-i6-82f">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="154" width="414" height="708"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="oHu-sD-Icz" detailTextLabel="q0A-0v-frx" style="IBUITableViewCellStyleSubtitle" id="Cvt-Ej-6XC">
@@ -51,10 +55,13 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="QuR-aN-qox" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0l6-Iw-wBT"/>
+                            <constraint firstItem="QuR-aN-qox" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Dm7-UY-Llu"/>
                             <constraint firstItem="Au0-i6-82f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="d5s-lX-g62"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Au0-i6-82f" secondAttribute="bottom" id="iM3-Bg-EWW"/>
-                            <constraint firstItem="Au0-i6-82f" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="oS6-m1-p6z"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Au0-i6-82f" secondAttribute="trailing" id="wb5-tA-yWQ"/>
+                            <constraint firstItem="Au0-i6-82f" firstAttribute="top" secondItem="QuR-aN-qox" secondAttribute="bottom" constant="10" id="xdh-i8-LBT"/>
+                            <constraint firstItem="QuR-aN-qox" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zWT-Qh-Sd8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -66,6 +73,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="searchBar" destination="QuR-aN-qox" id="MCp-Kn-pS0"/>
                         <outlet property="tableView" destination="Au0-i6-82f" id="ryq-kz-dfW"/>
                         <segue destination="YG5-bl-mU2" kind="show" identifier="cellSegue" id="sY9-hL-7Vd"/>
                     </connections>
@@ -186,6 +194,8 @@
                         <viewLayoutGuide key="safeArea" id="XJA-Gd-9PE"/>
                     </view>
                     <connections>
+                        <outlet property="category" destination="dcY-X1-LAa" id="ULQ-dI-cwG"/>
+                        <outlet property="categoryTextField" destination="dcY-X1-LAa" id="xdb-OI-6Bq"/>
                         <outlet property="contentsTextView" destination="ef9-ZS-Q1E" id="1At-Bm-x3j"/>
                         <outlet property="datePicker" destination="nWd-2s-uFX" id="Djy-kr-UbT"/>
                         <outlet property="titleTextField" destination="iGZ-jv-KZp" id="hr4-pe-HKU"/>
